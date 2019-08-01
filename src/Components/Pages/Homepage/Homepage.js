@@ -10,12 +10,14 @@ import image3 from '../../../assets/images/Image3.svg'
 import twitterImage from '../../../assets/images/twitter.svg'
 import instagramImage from '../../../assets/images/instagram.svg'
 import facebookImage from '../../../assets/images/facebook.svg'
+import Layout from "../../../Containers/Layout/Layout"
 
 
 
 const Homepage = () => {
 	return (
-			<div className={styles.Homepage}>
+		<Layout>
+						<div className={styles.Homepage}>
 					<section className={styles.header}>
 					<div className={styles.headerContainer}>				
 					<h1>Living foundation <span className={styles.colored}>Orphange</span></h1>
@@ -73,6 +75,7 @@ const Homepage = () => {
 					</footer>
 
 			</div>
+		</Layout>
 			
 	)
 }
