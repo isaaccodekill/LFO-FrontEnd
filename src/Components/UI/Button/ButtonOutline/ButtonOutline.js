@@ -9,4 +9,4 @@ const ButtonOutline = (props) => {
 	)
 }
 
-export default Buttonfull
+export default ButtonOutline

@@ -5,5 +5,8 @@
 	border: none;
 	background-color: #eb7722;
 	color: #fff;
-	padding: 6px 15px;
+	padding: 13px 39px;
+	margin: 0 20px;
+	margin-left: 0;
+	cursor: pointer;
 }

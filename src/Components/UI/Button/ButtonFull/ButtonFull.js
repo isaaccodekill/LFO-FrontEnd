@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './ButtonFull.module.css'
 
-const Buttonfull = (props) => {
+const ButtonFull = (props) => {
 	return (
 		<button className={styles.ButtonFull} onClick={props.active}>
 			{props.children}
@@ -9,4 +9,4 @@ const Buttonfull = (props) => {
 	)
 }
 
-export default Buttonfull
+export default ButtonFull

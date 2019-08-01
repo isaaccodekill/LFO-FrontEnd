@@ -1,9 +1,14 @@
 .Card{
 	padding: 20px;
+	display: grid;
+	width: 350px;
+	justify-items: center;
 	grid-template-rows: repeat(min-content, 1fr);
-	grid-row-gap: 20px;
-	height: 200px;
+	grid-row-gap: 15px;
 	border-radius: 5px; 
+	text-align: center;
+	box-shadow: 0 4px 6px #00000020;
+	border: 1px solid #eb7722;
 }
 
 .cardText{
@@ -11,4 +16,10 @@
 	font-size: 14px; 
 	color: #828282;
 	text-align: center;	
+	line-height: 1.5;
+}
+
+.heading2{
+	color: #eb7722;
+	font-size: 18px;
 }

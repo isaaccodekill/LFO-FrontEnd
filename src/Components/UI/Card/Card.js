@@ -3,9 +3,9 @@ import styles from './Card.module.css'
 
 const Card = (props) => {
 	return (
-		<div className={styles.card}>
+		<div className={styles.Card}>
 			<img src={props.image} alt=""/>
-			<h2 className="heading2" style={{
+			<h2 className={styles.heading2} style={{
 				color: "#eb772"
 			}}>
 				{props.heading}

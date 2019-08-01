@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './UnAuthNav.module.css'
 import Logo from '../UI/Logo/Logo'
-import Button from '../UI/Button/ButtonFull'
+import Button from '../UI/Button/ButtonFull/ButtonFull'
 import hamburger from '../../assets/images/hamburger.svg'
 
 
@@ -15,7 +15,7 @@ const UnAuthNav = (props) => {
 				<li className={styles.navItem}>Donate</li>
 				<li className={styles.navItem}>Visit</li>
 			</ul>
-			<Button>
+			<Button addedClass={styles.Login}>
 				Admin Login
 			</Button>
 			<img src={hamburger} alt="The menu bar button" onclick={props.openSideBar}/>
