@@ -1,6 +1,6 @@
 import React from 'react'
-import Logo from ''
-import styles from "./unuth-sidebar.module.css"
+import Logo from '../UI/Logo/Logo'
+import styles from "./unauth-sidebar.module.css"
 import BackImage from '../../assets/images/close.svg'
 // import Button from '../UI/Button/Button'
 // import twitter from ''

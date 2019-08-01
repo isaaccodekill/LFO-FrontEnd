@@ -1,27 +1,29 @@
 .Homepage{
 	display: grid;
-	grid-template-columns: minmax(2rem, 1fr) max-content  minmax(2rem, 1fr); 
-	background-color: #e5e5e5;
+	grid-template-columns: minmax(30px, 5rem) 1fr  minmax(30px, 5rem); 
+	background-color: #fff;
+	width: 100
 }
 
 section.header{
 	grid-column: 2 / 3;
 	display: flex;
 	justify-content: space-between;	
-	align-items: flex-start;
-	padding: 180px;
+	align-items: center;
+	height: 70vh;
 }
 
 .img{
 	height: 300px;
 }
 
-.header__container{
+.headerContainer{
 	flex-basis: 40%;
+	height: 100%;
 }
 
 .header__heading{
-	font-size: 27px;
+	font-size: 35px;
 	font-family: 'Roboto', sans-serif;
 	color: #828282;
 }
@@ -80,7 +82,7 @@ section.header{
 
 }
 
-.locationText{
+.LocationText{
 	font-size: 15px;
 	color: #828282;
 }

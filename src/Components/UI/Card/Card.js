@@ -6,7 +6,7 @@ const Card = (props) => {
 		<div className={styles.card}>
 			<img src={props.image} alt=""/>
 			<h2 className="heading2" style={{
-				color: "#eb772";
+				color: "#eb772"
 			}}>
 				{props.heading}
 			</h2>

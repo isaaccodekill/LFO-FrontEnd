@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 // import AuthNav from '../../Components/auth-navbar/'
 // import AuthSide from '../../Components/authSide'
-import UnAuthNav from  '../../Components/unauth-navbar/UnauthNav'
+import UnAuthNav from  '../../Components/unauth-navbar/UnAuthNav'
 import UnAuthSide from '../../Components/unauth-sidebar/unauth-sidebar'
-import backdrop from ''
+import backdrop from '../../Components/UI/Backdrop/Backdrop'
 
 
 class Layout extends Component {
@@ -23,7 +23,7 @@ class Layout extends Component {
 	render(){
 		return (
 			<React.Fragment>
-				<backdrop show={this.sate.showSide} action={this.closeSidebar}/>
+				<backdrop show={this.state.showSide} action={this.closeSidebar}/>
 				<UnAuthNav openSideBar={this.openSideBar}/>
 				<UnAuthSide closeAction={this.closeSidebar} show={this.state.showsidebar}/>
 				{this.props.children}

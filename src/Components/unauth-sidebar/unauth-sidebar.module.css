@@ -1,3 +1,9 @@
+@media(min-width: 769px){
+	.sideBar{
+		display: none;
+	}
+}
+@media (max-width: 768px){
 .sideBar{
 	width: 70%;
 	padding: 20px;
@@ -63,4 +69,6 @@
 
 .soc-section img{
 	width: 100%;
+}
+
 }
