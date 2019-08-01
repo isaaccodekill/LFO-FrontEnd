@@ -143,8 +143,20 @@ h1.sectionHeading{
 	color: #ccc;
 }
 
+@media (max-width: 1100px){
+	section.header{
+		padding: 80px;
+	}
 
+	section.header img{
+		flex-basis: 30%;
+	}
 
+	.headerContainer{
+		flex-basis: 70%;
+	}
+
+}
 
 
 
