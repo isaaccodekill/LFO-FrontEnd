@@ -1,0 +1,14 @@
+.my-navbar{
+    background-color: #EB7722 !important;
+    color: white !important;
+    font-family: 'Raleway';
+}
+
+a{
+    color: white !important;
+}
+
+.log-out-btn{
+    background-color: #EB7722 !important;
+    color: white;
+}
