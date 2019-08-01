@@ -1,0 +1,9 @@
+.ButtonFull{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	border-radius: 5px;
+	border: none;
+	background-color: #eb7722;
+	color: #fff;
+	padding: 6px 15px;
+}
