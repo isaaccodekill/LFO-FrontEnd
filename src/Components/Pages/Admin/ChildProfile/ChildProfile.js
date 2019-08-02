@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import axios from "axios";
-import "./ChildProfile.css";
 import Loader from "react-loader-spinner";
 import AdminHeader from "../../../../Components/admin/AdminHeader";
-// import { Timeline, TimelineEvent } from "react-event-timeline";
-import Timeline from 'react-image-timeline';
-require('react-image-timeline/dist/timeline.css');
+import ChilldTimelines from "../../../../Components/admin/Timeline/Timelines";
+import "./ChildProfile.css";
+
 
 
 class AddChild extends Component {
@@ -14,14 +13,6 @@ class AddChild extends Component {
     super(props);
     this.state = {
       user: {},
-      events: [
-        {
-          date: new Date(2013, 9, 27),
-          text: "Sed leo elit, pellentesque sit amet congue quis, ornare nec lorem.",
-          title: "Cairo, Egypt",
-          imageUrl: "http://github.com/aaron9000/react-image-timeline/blob/master/src/assets/cairo.jpg?raw=true"
-      }
-      ]
     };
   }
 
@@ -77,29 +68,7 @@ class AddChild extends Component {
               </div>
             </div>
           </div>
-          {/* <Timeline>
-            <TimelineEvent
-              title="John Doe sent a SMS"
-              createdAt="2016-09-12 10:06 PM"
-              icon={<i className="material-icons md-18">textsms</i>}
-            >
-                <img src="https://res.cloudinary.com/dldd8ucby/image/upload/v1561660595/Ellipse_2.png" />
-              I received the payment for $543. Should be shipping the item
-              within a couple of hours.
-            </TimelineEvent>
-            <TimelineEvent
-              title="You sent an email to John Doe"
-              createdAt="2016-09-11 09:06 AM"
-              icon={<i className="material-icons md-18">email</i>}
-            >
-              Like we talked, you said that you would share the shipment
-              details? This is an urgent order and so I am losing patience. Can
-              you expedite the process and pls do share the details asap.
-              Consider this a gentle reminder if you are on track already!
-            </TimelineEvent>
-          </Timeline> */}
-
-          <Timeline events={this.state.events} />
+        <ChilldTimelines/>
         </div>
       </div>
     );
