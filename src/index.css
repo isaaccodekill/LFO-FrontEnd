@@ -63,7 +63,7 @@ code {
   border: 1px solid #aaa;
   border-radius: 5px;
   outline: none;
-  color: #aaa;
+  color: #000;
 }
 
 .form-submit{
@@ -74,7 +74,24 @@ code {
   color: #fff;
   border: none;
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
+
+.form-submit:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+.textareaStyle{
+  width: 100%;
+  padding: 10px 15px;
+  height: 200px;
+  border: 1px solid #aaa;
+  outline: none;
+  border-radius: 5px;
+  color: #000;
+
+}
+
 
 @media (max-width: 625px){
   .formGroup-half{

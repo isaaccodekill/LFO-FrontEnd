@@ -102,15 +102,16 @@ h1.sectionHeading{
 }
 
 .contactBox{
-	height: 450px;
+	height: 100%;
 	width: 100%;
 	max-width: 550px;
 	background-color:#fff;
 	box-shadow: 0 4px 6px #00000030;
 	border-radius: 5px;
+	padding: 50px;
 }
 
-.contactBox img{
+img.imageContact{
 	height: 100%;
 	margin: 0;
 }

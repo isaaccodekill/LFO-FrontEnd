@@ -1,10 +1,15 @@
 .ButtonOutline{
 	color: #eB7722;
 	border: 2px solid #eB7722;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'raleway', sans-serif;
 	font-size: 13px;
 	border-radius: 5px;
 	padding: 13px 39px;
 	background-color: #fff;
 	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.ButtonOutline:hover{
+	color: orange;
+	border-color: orange;
 }

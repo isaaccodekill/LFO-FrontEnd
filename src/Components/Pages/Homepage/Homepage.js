@@ -20,7 +20,7 @@ const Homepage = () => {
 					<div className={styles.Homepage}>
 					<section className={styles.header}>
 					<div className={styles.headerContainer}>				
-					<h1>Living foundation <span className={styles.colored}>Orphange</span></h1>
+					<h1>Living Foundation <span className={styles.colored}>Orphange</span></h1>
 					<p className={styles.headerText}>
 					Empowering children to reach their full potential
 					</p>
@@ -59,10 +59,29 @@ const Homepage = () => {
 						</div>
 					</section>
 					<section className={styles.contact}>
-						<div className={styles.contactBox}>
-
+						<div className={styles.contactBox}>			
+							<h2 className="formHeading">
+								Contact Us
+							</h2>
+				<form className="formStlye">
+								<div className="formGroup">
+									<label htmlFor="">
+										Email Address or Phone Number
+									</label>
+									<input type="text" className="inputStyle"/>
+								</div>
+								<div className="formGroup">
+									<label htmlFor="">
+										Message
+									</label>
+									<textarea className="textareaStyle"/>
+								</div>
+								<button className="form-submit">
+									Login
+								</button>
+							</form>
 						</div>
-						<img src={image3} alt="" className="img img-3"/>
+						<img src={image3}  alt="" className={styles.imageContact}/>
 						<p className={styles.LocationText}>
 							LFo is located at <span className={styles.darkify}> insert Location </span>
 					</p>
