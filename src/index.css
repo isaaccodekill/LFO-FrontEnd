@@ -21,7 +21,7 @@ code {
 .formHeading{
     font-size: 25px;
     color: #eb7722;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .formSubHeading{
@@ -40,7 +40,14 @@ code {
 .formGroup{
   display: block;
   width: 100%;
-  padding: 15px 0;
+  padding: 10px 0;
+  text-align: left;
+}
+.formGroup-half{
+  display: inline-block;
+  width: 49%;
+  padding: 10px 0;
+  margin-right: 3px;
 }
 
 .formGroup label{
@@ -68,4 +75,13 @@ code {
   border: none;
   border-radius: 5px;
 }
+
+@media (max-width: 625px){
+  .formGroup-half{
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
 
