@@ -29,7 +29,7 @@ import AdminListMessages from "./Components/Pages/Admin/ListContactMessages/List
 class App extends Component {
   render() {
     return (
-      <BrowserRouter className="entire-project">
+      <HashRouter className="entire-project">
         <div>
           <Switch>
             <Route exact path="/" component={Homepage} />
@@ -61,7 +61,7 @@ class App extends Component {
             <Route exact path="/admin/messages" component={AdminListMessages} />
           </Switch>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
