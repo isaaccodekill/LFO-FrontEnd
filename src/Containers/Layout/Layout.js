@@ -25,7 +25,7 @@ class Layout extends Component {
 		return (
 			<React.Fragment>
 				<Backdrop show={this.state.showsidebar} action={this.closeSideBar}/>
-				<UnAuthNav openSideBar={this.openSideBar}/>
+				<UnAuthNav openSideBar={this.openSideBar} showButton={this.props.login}/>
 				<UnAuthSide closeAction={this.closeSideBar} show={this.state.showsidebar}/>
 				{this.props.children}
 			</React.Fragment>

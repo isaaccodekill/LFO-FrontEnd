@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from '../UI/Logo/Logo'
 import styles from "./unauth-sidebar.module.css"
 import BackImage from '../../assets/images/close.svg'
-
+import { NavLink } from 'react-router-dom'
 const unAuthSide = (props) => {
 
 	const addedClass = props.show ? styles.showSide : styles.hideSide  		
@@ -14,26 +14,22 @@ const unAuthSide = (props) => {
 				<Logo />
 			</div>
 			<ul className={styles.navList}>
-				<li className={styles.navItem}>About</li>
-				<li className={styles.navItem}>Contact Us</li>
-				<li className={styles.navItem}>Donate</li>
-				<li className={styles.navItem}>Visit</li>
-				<li className={styles.navItem}>Admin Login</li>		
+				<NavLink to="/#about" activeClassName={styles.active}>
+					<li className={styles.navItem}>About</li>
+				</NavLink>
+				<NavLink to="/#Contact" activeClassName={styles.active}>
+					<li className={styles.navItem}>Contact Us</li>					
+				</NavLink>
+				<NavLink to="/Donate" activeClassName={styles.active}>	
+					<li className={styles.navItem}>Donate</li>					
+				</NavLink>
+				<NavLink to="/visit" activeClassName={styles.active}>
+					<li className={styles.navItem}>Visit</li>
+				</NavLink>
+				<NavLink to="/login" activeClassName={styles.active}>
+					<li className={styles.navItem}>Admin Login</li>							
+				</NavLink>				
 			</ul>
-			<div className="soc-section">
-				<a href="" className="socialLinks">
-					<img src="" alt=""/>
-				</a>
-				<a href="" className="socialLinks">
-					<img src="" alt=""/>
-				</a>
-				<a href="" className="socialLinks">
-					<img src="" alt=""/>
-				</a>
-				<a href="" className="socialLinks">
-					<img src="" alt=""/>
-				</a>
-			</div>
 		</div>
 	)
 }

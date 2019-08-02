@@ -7,6 +7,14 @@
 	background-color: #fff;
 	align-items: center;
 }
+.navigation a{
+	text-decoration: none;
+	color: #aaa;
+}
+
+a.active{
+	color: #000;
+}
 
 
 .navList{
@@ -20,7 +28,6 @@
 
 .navItem{
 	font-size: 16px;
-	color: #aaa;
 	cursor: pointer;
 	transition: all 0.2s ease;
 }
