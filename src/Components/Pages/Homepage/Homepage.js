@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { Component }  from 'react'
 import styles from './Homepage.module.css'
 import heartImage from '../../../assets/images/Vector.svg'
 import ButtonFull from '../../UI/Button/ButtonFull/ButtonFull'
@@ -11,11 +11,34 @@ import twitterImage from '../../../assets/images/twitter.svg'
 import instagramImage from '../../../assets/images/instagram.svg'
 import facebookImage from '../../../assets/images/facebook.svg'
 import Layout from "../../../Containers/Layout/Layout"
+import axios from "axios"
 
 
+class Homepage extends Component {
+	state = {
+			contactinfo: "",
+			message: ""
+	}
+	updateContactInfo = (e) => {
+		this.setState({contactinfo: e.target.value})
+	}
+	updateMessage = (e) => {
+		this.setState({message: e.target.value})
+	}
+	submitMessage = async () => {
+		try{
+			await axios.post("/url/messages")
+			this.setState({
+				contactinfo: "",
+				message: ""
+			})
+		}
+		catch(error){
 
-const Homepage = () => {
-	return (
+		}
+	}
+	render () {
+		return (
 		<Layout>
 					<div className={styles.Homepage}>
 					<section className={styles.header}>
@@ -68,13 +91,13 @@ const Homepage = () => {
 									<label htmlFor="">
 										Email Address or Phone Number
 									</label>
-									<input type="text" className="inputStyle"/>
+									<input type="text" onChange={this.updateContactInfo} value={this.state.contactinfo} className="inputStyle"/>
 								</div>
 								<div className="formGroup">
 									<label htmlFor="">
 										Message
 									</label>
-									<textarea className="textareaStyle"/>
+									<textarea onChange={this.updateMessage} value={this.state.message} className="textareaStyle"/>
 								</div>
 								<button className="form-submit">
 									Login
@@ -95,6 +118,8 @@ const Homepage = () => {
 			</div>
 		</Layout>
 			
-	)
+	)	
+	}
+	
 }
 export default Homepage
