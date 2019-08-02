@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter, Router, Route, Link } from "react-router-dom";
+import { HashRouter, Switch } from "react-router-dom";
 import Layout from "./Containers/Layout/Layout";
 import Homepage from "./Components/Pages/Homepage/Homepage";
+import Donation from "./Components/Pages/Users/Donation/Donation"
 import AdminListChildren from "./Components/Pages/Admin/ListChildren/ListChildren"
 import AdminAddChild from "./Components/Pages/Admin/AddChild/AddChild"
 import ChildProfile from "./Components/Pages/Admin/ChildProfile/ChildProfile"
@@ -15,14 +16,17 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <HashRouter className="entire-project">
+      <BrowserRouter className="entire-project">
       <div>
-        <Route exact path='/' component={Homepage} />
-        <Route exact path='/admin/children' component={AdminListChildren} />
-        <Route exact path='/admin/children/add' component={AdminAddChild} />
-        <Route exact path='/admin/user/profile' component={ChildProfile} />
+        <Switch>
+            <Route exact path='/' component={Homepage} />
+            <Route exact path='/Donate' component={Donation} />
+            <Route exact path='/admin/children' component={AdminListChildren} />
+            <Route exact path='/admin/children/add' component={AdminAddChild} />
+            <Route exact path='/admin/user/profile' component={ChildProfile} />
+        </Switch>
       </div>
-    </HashRouter>
+    </BrowserRouter>
     );
   }
 }

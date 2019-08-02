@@ -17,7 +17,7 @@ import Layout from "../../../Containers/Layout/Layout"
 const Homepage = () => {
 	return (
 		<Layout>
-						<div className={styles.Homepage}>
+					<div className={styles.Homepage}>
 					<section className={styles.header}>
 					<div className={styles.headerContainer}>				
 					<h1>Living foundation <span className={styles.colored}>Orphange</span></h1>
@@ -55,8 +55,7 @@ const Homepage = () => {
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae dolorem, delectus molestias iste ullam. Reiciendis voluptate totam nulla sed perspiciatis.
 						</Card>
 						<Card image={heartImage} heading="Health And Support">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi praesentium voluptate ab aspernatur dignissimos consequatur iste corrupti quis, eos inventore? Quasi voluptatibus tenetur ab. Perferendis possimus praesentium molestiae incidunt vel!	
-						</Card>	
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi praesentium voluptate ab aspernatur dignissimos consequatur iste corrupti quis!					</Card>	
 						</div>
 					</section>
 					<section className={styles.contact}>

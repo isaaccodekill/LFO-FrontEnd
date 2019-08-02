@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 // import AuthSide from '../../Components/authSide'
 import UnAuthNav from  '../../Components/unauth-navbar/UnAuthNav'
 import UnAuthSide from '../../Components/unauth-sidebar/unauth-sidebar'
-import backdrop from '../../Components/UI/Backdrop/Backdrop'
+import Backdrop from '../../Components/UI/Backdrop/Backdrop'
 
 
 class Layout extends Component {
@@ -17,15 +17,16 @@ class Layout extends Component {
 	}
 
 	openSideBar = () => {
+		console.log("Menu has been opened")
 		this.setState({showsidebar: true})
 	}
 
 	render(){
 		return (
 			<React.Fragment>
-				<backdrop show={this.state.showSide} action={this.closeSidebar}/>
+				<Backdrop show={this.state.showsidebar} action={this.closeSideBar}/>
 				<UnAuthNav openSideBar={this.openSideBar}/>
-				<UnAuthSide closeAction={this.closeSidebar} show={this.state.showsidebar}/>
+				<UnAuthSide closeAction={this.closeSideBar} show={this.state.showsidebar}/>
 				{this.props.children}
 			</React.Fragment>
 		)

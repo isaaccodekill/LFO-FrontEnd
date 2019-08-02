@@ -15,10 +15,12 @@ const UnAuthNav = (props) => {
 				<li className={styles.navItem}>Donate</li>
 				<li className={styles.navItem}>Visit</li>
 			</ul>
-			<Button addedClass={styles.Login}>
+			<div className={styles.Login}>
+			<Button>
 				Admin Login
 			</Button>
-			<img src={hamburger} alt="The menu bar button" onclick={props.openSideBar}/>
+			</div>
+			<img className={styles.OpenImg} src={hamburger} alt="The menu bar button" onClick={props.openSideBar}/>
 		</nav>
 	)
 }

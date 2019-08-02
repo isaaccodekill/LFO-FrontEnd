@@ -17,3 +17,55 @@ code {
 	padding: 0;
 	box-sizing: border-box;
 }
+
+.formHeading{
+    font-size: 25px;
+    color: #eb7722;
+    margin-bottom: 20px;
+}
+
+.formSubHeading{
+  color: #aaa;
+  font-size: 17px;
+  /*margin-bottom: 0px;*/
+}
+
+.formStyle{
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: red;
+}
+
+.formGroup{
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.formGroup label{
+  font-size: 13px;
+  color: #aaa;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.inputStyle{
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  outline: none;
+  color: #aaa;
+}
+
+.form-submit{
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #eb7722;
+  margin-top: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
