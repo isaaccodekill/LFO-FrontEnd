@@ -1,16 +1,27 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
-import Loader from "react-loader-spinner";
-import AdminHeader from "../../../../Components/admin/AdminHeader";
-import { Timeline, TimelineEvent } from "react-event-timeline";
 import axios from "axios";
 import "./ChildProfile.css";
+import Loader from "react-loader-spinner";
+import AdminHeader from "../../../../Components/admin/AdminHeader";
+// import { Timeline, TimelineEvent } from "react-event-timeline";
+import Timeline from 'react-image-timeline';
+require('react-image-timeline/dist/timeline.css');
+
 
 class AddChild extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: {}
+      user: {},
+      events: [
+        {
+          date: new Date(2013, 9, 27),
+          text: "Sed leo elit, pellentesque sit amet congue quis, ornare nec lorem.",
+          title: "Cairo, Egypt",
+          imageUrl: "http://github.com/aaron9000/react-image-timeline/blob/master/src/assets/cairo.jpg?raw=true"
+      }
+      ]
     };
   }
 
@@ -66,7 +77,7 @@ class AddChild extends Component {
               </div>
             </div>
           </div>
-          <Timeline>
+          {/* <Timeline>
             <TimelineEvent
               title="John Doe sent a SMS"
               createdAt="2016-09-12 10:06 PM"
@@ -86,7 +97,9 @@ class AddChild extends Component {
               you expedite the process and pls do share the details asap.
               Consider this a gentle reminder if you are on track already!
             </TimelineEvent>
-          </Timeline>
+          </Timeline> */}
+
+          <Timeline events={this.state.events} />
         </div>
       </div>
     );
