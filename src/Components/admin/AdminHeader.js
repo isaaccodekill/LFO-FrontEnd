@@ -1,4 +1,5 @@
 import React from 'react'
+import { Redirect, NavLink } from "react-router-dom";
 import './AdminHeader.css'
 
 const AdminHeader = () => {
@@ -13,13 +14,19 @@ const AdminHeader = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
           <li className="nav-item ">
-              <a className="nav-link" href="#">Children</a>
+            <NavLink to="/admin/children">
+              <a className="nav-link" href>Children</a>
+              </NavLink>
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="#">Resources</a>
+            <NavLink to="/admin/resources">
+              <a className="nav-link" href>Resources</a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Visitation</a>
+            <NavLink to="/admin/visit">
+              <a className="nav-link" href>Visitations</a>
+              </NavLink>
             </li>
             <li className="nav-item ">
               <a className="nav-link" href="#">Donations</a>
