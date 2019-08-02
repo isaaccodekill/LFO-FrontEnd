@@ -14,6 +14,8 @@ import AdminListResources from "./Components/Pages/Admin/ListResources/ListResou
 import AdminAddResource from "./Components/Pages/Admin/AddResource/AddResource"
 import AdminAddVisit from "./Components/Pages/Admin/AddVisit/AddVisit"
 import AdminListVisit from "./Components/Pages/Admin/ListVisit/ListVisit"
+import AdminListDonation from "./Components/Pages/Admin/ListDonations/ListDonations"
+import AdminListMessages from "./Components/Pages/Admin/ListContactMessages/ListContactMessages"
 
 
 class App extends Component {
@@ -30,6 +32,8 @@ class App extends Component {
         <Route exact path='/admin/resources/add' component={AdminAddResource} />
         <Route exact path='/admin/visit' component={AdminListVisit} />
         <Route exact path='/admin/visit/add' component={AdminAddVisit} />
+        <Route exact path='/admin/donations' component={AdminListDonation} />
+        <Route exact path='/admin/messages' component={AdminListMessages} />
       </div>
     </HashRouter>
     );

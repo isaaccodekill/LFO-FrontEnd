@@ -29,10 +29,14 @@ const AdminHeader = () => {
               </NavLink>
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="#">Donations</a>
+            <NavLink to="/admin/donations">
+              <a className="nav-link" href>Donations</a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Contact Messages</a>
+            <NavLink to="/admin/messages">
+              <a className="nav-link" href>Contact Messages</a>
+              </NavLink>
             </li>
           </ul>
           <button className="btn btn-outline log-out-btn my-2 my-sm-0" type="submit">Logout</button>

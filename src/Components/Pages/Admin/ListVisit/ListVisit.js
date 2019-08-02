@@ -58,12 +58,6 @@ class ListVisit extends Component {
     return items;
   }
 
-  reRoute(route) {
-    this.setState({ redirect: true, toUrl: route }, () => {
-      console.log();
-    });
-  }
-
   render() {
     const loading = this.state.loading;
     let load;

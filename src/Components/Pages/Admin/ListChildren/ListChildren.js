@@ -83,12 +83,6 @@ class ListChildren extends Component {
     return items;
   }
 
-  reRoute(route) {
-    this.setState({ redirect: true, toUrl: route }, () => {
-      console.log();
-    });
-  }
-
   render() {
     const { redirect, toUrl } = this.state;
     if (redirect && toUrl) {
@@ -123,6 +117,7 @@ class ListChildren extends Component {
               <th scope="col">Date of Birth</th>
               <th scope="col">Taken from</th>
               <th scope="col">Brought by</th>
+              <th scope="col">Actions</th>
             </tr>
           </thead>
           <tbody>{this.mapChildrenTable()}</tbody>
