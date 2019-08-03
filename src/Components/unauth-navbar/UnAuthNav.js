@@ -16,9 +16,9 @@ const UnAuthNav = (props) => {
 		<nav className={styles.navigation}>
 			<Logo color="black"/>
 			<ul className={styles.navList}>
-			<Link to='/#about' activeClassName={styles.active} to="" spy={true} smooth={true} offset={-70} duration={500}>
+			<NavLink to='/#about' activeClassName={styles.active}>
 				<li className={styles.navItem}>About Us</li>
-			</Link>
+			</NavLink>
 			<NavLink to='/visit' activeClassName={styles.active}>
 				<li className={styles.navItem}>Visit</li>
 			</NavLink>
