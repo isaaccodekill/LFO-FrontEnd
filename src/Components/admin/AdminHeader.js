@@ -39,7 +39,9 @@ const AdminHeader = () => {
               </NavLink>
             </li>
           </ul>
-          <button className="btn btn-outline log-out-btn my-2 my-sm-0" type="submit">Logout</button>
+          <NavLink to="/">
+                <button className="btn btn-outline log-out-btn my-2 my-sm-0" type="submit">Logout</button>
+          </NavLink>
         </div>
       </nav>
 			
