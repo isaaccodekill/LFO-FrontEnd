@@ -3,7 +3,7 @@ import styles from './ButtonFull.module.css'
 
 const ButtonFull = (props) => {
 	return (
-		<button className={styles.ButtonFull} onClick={props.active}>
+		<button className={styles.ButtonFull} onClick={props.action}>
 			{props.children}
 		</button>
 	)

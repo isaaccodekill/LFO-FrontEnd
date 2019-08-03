@@ -1,0 +1,27 @@
+div{
+    font-family: "Raleway"
+}
+
+.reg-title{
+    color: #EB7722;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 35px auto;
+}
+
+.imgPreview {
+    text-align: center;
+    margin: 10px auto;
+    height: 300px;
+    width: 450px;
+    border: 1px solid black
+  }
+
+  .submit-btn{
+    background-color: #EB7722;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  

@@ -4,6 +4,7 @@ import axios from "axios";
 import Loader from "react-loader-spinner";
 import AdminHeader from "../../../../Components/admin/AdminHeader";
 import ChilldTimelines from "../../../../Components/admin/Timeline/Timelines";
+import Button from "../../../UI/Button/ButtonFull/ButtonFull"
 import "./ChildProfile.css";
 
 
@@ -19,6 +20,9 @@ class AddChild extends Component {
   componentDidMount = () => {
     // this.getChildren();
   };
+  AddToTimeline = () => {
+    this.props.history.push("/admin/child/AddTimeLine")
+  }
 
   render() {
     const { redirect, toUrl } = this.state;
@@ -48,26 +52,27 @@ class AddChild extends Component {
                 <p className="d-flex justify-content-between">
                   <p>
                     <span className="bio-title">Born:</span>
-                    <span className="bio-content">Date of Birth</span>
+                    <span className="bio-content">01 Jan 1970</span>
                   </p>
                   <p>
-                    <span className="bio-title">Born:</span>
-                    <span className="bio-content">Date of Birth</span>
+                    <span className="bio-title">Taken From:</span>
+                    <span className="bio-content">Lorem ipsum</span>
                   </p>
                 </p>
                 <p className="d-flex justify-content-between">
                   <p>
-                    <span className="bio-title">Born:</span>
-                    <span className="bio-content">Date of Birth</span>
+                    <span className="bio-title">Arrived:</span>
+                    <span className="bio-content">01 Jan 1990</span>
                   </p>
                   <p>
-                    <span className="bio-title">Born:</span>
-                    <span className="bio-content">Date of Birth</span>
+                    <span className="bio-title">Brought By:</span>
+                    <span className="bio-content">Lorem ipsum</span>
                   </p>
                 </p>
               </div>
             </div>
           </div>
+          <Button action={this.AddToTimeline}>Add to timeLine</Button>
         <ChilldTimelines/>
         </div>
       </div>

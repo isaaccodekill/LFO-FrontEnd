@@ -46,6 +46,7 @@ class AddChild extends Component {
     reader.readAsDataURL(file);
   }
 
+
   render() {
     const { redirect, toUrl } = this.state;
     const imagePreviewUrl = this.state.imagePreviewUrl;
