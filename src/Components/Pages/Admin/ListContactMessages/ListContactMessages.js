@@ -17,6 +17,10 @@ class ListContactMessages extends Component {
         {
           email: "mail@mail.com",
           message: "Sit veniam consequat laboris est ad."
+        },
+         {
+          email: "mail@mail.com",
+          message: "Sit veniam consequat laboris est ad. Sit veniam consequat laboris est ad."
         }
       ]
     };

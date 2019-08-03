@@ -28,6 +28,12 @@ class ListDonations extends Component {
           description: "Donation from DSC",
           phone: "244545454",
         },
+        {
+          name: "John Doe",
+          amount: "30,000",
+          description: "Donation from Local man",
+          phone: "244545454",
+        },
       ],
       redirect: false,
       toUrl: ""

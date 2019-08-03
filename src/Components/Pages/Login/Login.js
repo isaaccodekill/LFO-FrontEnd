@@ -1,6 +1,7 @@
 import React , { Component } from 'react'
 import Layout from '../../../Containers/Layout/Layout'
 import styles from './Login.module.css'
+import { NavLink } from 'react-router-dom'
 
 class Login extends Component {
 	state = {
@@ -33,9 +34,11 @@ class Login extends Component {
 							</label>
 							<input type="passsword" min="100" className="inputStyle" onChange={this.updateState} value={this.state.passsword}/>
 						</div>
-						<button className="form-submit">
-							Login
-						</button>
+						<NavLink to="/admin">
+								<button className="form-submit">
+									Login
+								</button>
+						</NavLink>
 					</form>
 				</div>
 			</Layout>

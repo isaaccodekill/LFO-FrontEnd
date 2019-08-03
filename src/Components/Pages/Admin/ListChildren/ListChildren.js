@@ -41,7 +41,16 @@ class ListChildren extends Component {
           dob: "22nd June 1995",
           taken_from: "New Hall",
           brought_by: "Unilag Security"
+        },
+        {
+          name: "Damian Nri",
+          sex: "Male",
+          arrival_date: "23rd June 2019",
+          dob: "22nd June 2000",
+          taken_from: "Jaja Hostel",
+          brought_by: "Unilag Security"
         }
+
       ],
       redirect: false,
       toUrl: ""

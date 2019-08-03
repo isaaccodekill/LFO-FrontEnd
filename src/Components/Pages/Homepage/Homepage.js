@@ -12,7 +12,8 @@ import instagramImage from '../../../assets/images/instagram.svg'
 import facebookImage from '../../../assets/images/facebook.svg'
 import Layout from "../../../Containers/Layout/Layout"
 import axios from "axios"
-
+import { NavLink } from 'react-router-dom'
+import { Element } from "react-scroll"
 
 class Homepage extends Component {
 	state = {
@@ -45,12 +46,16 @@ class Homepage extends Component {
 					<p className={styles.headerText}>
 					Empowering children to reach their full potential
 					</p>
-					<ButtonFull>Donate</ButtonFull>
-					<ButtonOutline>Visit</ButtonOutline>
+					<NavLink to="/donate">
+							<ButtonFull>Donate</ButtonFull>
+					</NavLink>
+					<NavLink to="/visit">
+							<ButtonOutline>Visit</ButtonOutline>
+					</NavLink>
 					</div>
 					<img src={image1} alt="Teddy Bear" className="img img1"/>
 					</section>
-					<section className={styles.AdditionalInfo}>
+						<section className={styles.AdditionalInfo} id="about" name="about">
 						<img src={image2} alt="" className="img2 img"/>
 						<div className={styles.headerContainer}>
 							<h1 className={[styles.sectionHeading]}>
@@ -79,7 +84,7 @@ class Homepage extends Component {
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi praesentium voluptate ab aspernatur dignissimos consequatur iste corrupti quis!					</Card>	
 						</div>
 					</section>
-					<section className={styles.contact}>
+					<section className={styles.contact} id="Contact" name="Contact" >
 						<div className={styles.contactBox}>			
 							<h2 className="formHeading">
 								Contact Us
@@ -98,7 +103,7 @@ class Homepage extends Component {
 									<textarea onChange={this.updateState} value={this.state.message} className="textareaStyle" name="message"/>
 								</div>
 								<button className="form-submit">
-									Login
+									Contact Us
 								</button>
 							</form>
 						</div>
