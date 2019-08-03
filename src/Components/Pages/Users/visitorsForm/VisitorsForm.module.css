@@ -6,9 +6,7 @@
 	padding-top: 0px;
 	padding-right: 0;
 	display: flex;
-	align-items: flex-start;
 	justify-content: space-between;
-	overflow: hidden;
 }
 
 .VisitorsFormFormBox{
@@ -19,6 +17,7 @@
 .img{
 	margin: 0;
 	width: 40%;
+	height: 600px;
 }
 
 .supportText{
@@ -30,6 +29,10 @@
 @media (max-width: 1100px){
 	.img{
 		width: 40%;
+	}
+	.VisitorsForm{
+		padding: 50px;
+		padding-right: 0;	
 	}
 
 	.VisitorsFormFormBox{

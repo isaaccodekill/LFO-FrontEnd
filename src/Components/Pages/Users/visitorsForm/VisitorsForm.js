@@ -1,10 +1,31 @@
-import React from 'react'
+import React , { Component } from 'react'
 import Image from '../../../../assets/images/Image3.svg'
 import Layout from '../../../../Containers/Layout/Layout'
 import styles from './VisitorsForm.module.css'
 
-const VisitorsForm = (props) => {
-	return(
+class VisitorsForm extends Component {
+	state = {
+		contactinfo: "",
+		fullName: "",
+		Date: "",
+		Time: "",
+		Description: "" 
+	}
+	updateState = (e) => {
+		const { name , value } = e.target 
+		this.setState({[name]: value})
+		console.log(this.state)
+	}
+	submit = async() => {
+		try{
+
+		}
+		catch(error){
+			
+		}
+	}
+	render (){
+		return(
 		<Layout>
 			<div className={styles.VisitorsForm}>
 			<div className={styles.VisitorsFormFormBox}>
@@ -17,31 +38,31 @@ const VisitorsForm = (props) => {
 						<label htmlFor="">
 							Email or phone
 						</label>
-						<input type="text" className="inputStyle"/>
+						<input type="text" className="inputStyle" name="contactinfo" onChange={this.updateState}/>
 					</div>
 					<div className="formGroup">
 						<label htmlFor="">
 							Full Name
 						</label>
-						<input type="text" min="100" className="inputStyle"/>
+						<input type="text" min="100" className="inputStyle" onChange={this.updateState} name="fullName"/>
 					</div>
 					<div className="formGroup formGroup-half">
 						<label htmlFor="">
 							Date
 						</label>
-						<input type="Date" className="inputStyle"/>
+						<input type="Date" className="inputStyle" onChange={this.updateState} name="Date"/>
 					</div>
-					<div className="formGroup formGroup-half">
+					<div className="formGroup formGroup-half last">
 						<label htmlFor="">
 							Time
 						</label>
-						<input type="Time" className="inputStyle"/>
+						<input type="Time" className="inputStyle" onChange={this.updateState} name="Time"/>
 					</div>
 					<div className="formGroup">
 						<label htmlFor="">
 							Description
 						</label>
-						<input type="text" className="inputStyle"/>
+						<input type="text" className="inputStyle" onChange={this.updateState} name="Description"/>
 					</div>
 					<button className="form-submit">
 						Send
@@ -53,6 +74,7 @@ const VisitorsForm = (props) => {
 		   </div>
 		</Layout>
 	)
+	}
 }
 
 export default VisitorsForm
