@@ -19,11 +19,9 @@ class Homepage extends Component {
 			contactinfo: "",
 			message: ""
 	}
-	updateContactInfo = (e) => {
-		this.setState({contactinfo: e.target.value})
-	}
-	updateMessage = (e) => {
-		this.setState({message: e.target.value})
+	updateState = (e) => {
+		const { name , value } = e.target
+		this.setState({[name]: value})
 	}
 	submitMessage = async () => {
 		try{
@@ -91,13 +89,13 @@ class Homepage extends Component {
 									<label htmlFor="">
 										Email Address or Phone Number
 									</label>
-									<input type="text" onChange={this.updateContactInfo} value={this.state.contactinfo} className="inputStyle"/>
+									<input type="text" onChange={this.updateState} value={this.state.contactinfo} className="inputStyle" name="contactinfo"/>
 								</div>
 								<div className="formGroup">
 									<label htmlFor="">
 										Message
 									</label>
-									<textarea onChange={this.updateMessage} value={this.state.message} className="textareaStyle"/>
+									<textarea onChange={this.updateState} value={this.state.message} className="textareaStyle" name="message"/>
 								</div>
 								<button className="form-submit">
 									Login

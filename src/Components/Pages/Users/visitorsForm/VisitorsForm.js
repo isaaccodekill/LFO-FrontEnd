@@ -38,31 +38,31 @@ class VisitorsForm extends Component {
 						<label htmlFor="">
 							Email or phone
 						</label>
-						<input type="text" className="inputStyle" name="contactinfo" onChange={this.updateState}/>
+						<input type="text" className="inputStyle" name="contactinfo" onChange={this.updateState} value={this.state.contactinfo}/>
 					</div>
 					<div className="formGroup">
 						<label htmlFor="">
 							Full Name
 						</label>
-						<input type="text" min="100" className="inputStyle" onChange={this.updateState} name="fullName"/>
+						<input type="text" min="100" className="inputStyle" onChange={this.updateState} name="fullName" value={this.state.fullName}/>
 					</div>
 					<div className="formGroup formGroup-half">
 						<label htmlFor="">
 							Date
 						</label>
-						<input type="Date" className="inputStyle" onChange={this.updateState} name="Date"/>
+						<input type="Date" className="inputStyle" onChange={this.updateState} name="Date" value={this.state.Date}/>
 					</div>
 					<div className="formGroup formGroup-half last">
 						<label htmlFor="">
 							Time
 						</label>
-						<input type="Time" className="inputStyle" onChange={this.updateState} name="Time"/>
+						<input type="Time" className="inputStyle" onChange={this.updateState} name="Time" value={this.state.Time}/>
 					</div>
 					<div className="formGroup">
 						<label htmlFor="">
 							Description
 						</label>
-						<input type="text" className="inputStyle" onChange={this.updateState} name="Description"/>
+						<input type="text" className="inputStyle" onChange={this.updateState} name="Description" value={this.state.Description}/>
 					</div>
 					<button className="form-submit">
 						Send
